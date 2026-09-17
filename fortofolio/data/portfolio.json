@@ -1,4 +1,15 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "slug": "qweqwe",
+      "title": "QWEQWE",
+      "description": "QWEQWE",
+      "tags": [
+        "next.js"
+      ],
+      "repoUrl": "https://github.com/arya20p1-source/belajar.bab0",
+      "createdAt": "2026-09-17T09:51:23.629Z"
+    }
+  ],
   "certificates": []
 }

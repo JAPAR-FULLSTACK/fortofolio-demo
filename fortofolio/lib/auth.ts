@@ -13,9 +13,9 @@ import { cookies } from "next/headers";
 const SESSION_COOKIE = "forto_session";
 const SESSION_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 hari
 
-// Kunci cadangan yang stabil selama proses hidup (dipakai bila AUTH_SECRET
-// tidak diset di environment variable).
-const FALLBACK_SECRET = `fallback-${randomBytes(24).toString("hex")}`;
+// Kunci cadangan hanya untuk development. AUTH_SECRET tetap harus diset
+// agar session tidak memakai kunci publik yang sama di deployment.
+const FALLBACK_SECRET = "fortofolio-development-secret-change-me";
 
 export function getCredentials() {
   return {

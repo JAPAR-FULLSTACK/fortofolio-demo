@@ -50,9 +50,8 @@ AUTH_PASSWORD=password-anda
 AUTH_SECRET=kunci-rahasia-panjang-bebas
 ```
 
-> `AUTH_SECRET` wajib diset di produksi. Kalau kosong, dipakai kunci
-> cadangan yang hanya stabil selama satu proses server hidup — semua
-> session hangus setiap server restart.
+> `AUTH_SECRET` wajib diset di produksi. Kalau kosong, aplikasi memakai kunci
+> cadangan khusus development agar validasi session konsisten antar route.
 
 ## 📤 Mengunggah Project / Sertifikat
 
